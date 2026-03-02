@@ -1,0 +1,32 @@
+# ビルド結果（コンパイルされたファイル）
+*.obj
+*.exe
+*.dll
+*.lib
+*.pdb
+
+# 一時ファイル
+*.log
+*.tmp
+*.bak
+
+# Visual Studio関連
+.vs/
+*.suo
+*.user
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+
+# ビルドフォルダ
+Debug/
+Release/
+x64/
+ipch/
+
+# その他
+*.cache
+*.tlog
+*.idb
+*.ilk
