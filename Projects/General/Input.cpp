@@ -1,7 +1,5 @@
 #include "Input.h"
 #include "DxLib.h"
-#include "../Graphics/Fade.h"
-#include "GameConstants.h"
 
 Input::Input() :
 	m_inputData{},
@@ -51,9 +49,6 @@ Input::Input() :
 	m_inputTable["playerSpeedUp"] = { {PeripheralType::keyboard,KEY_INPUT_W },//キーボード:W
 							{PeripheralType::pad1,PAD_INPUT_X & PAD_INPUT_B } };//パッド:XボタンとBボタン
 #endif // _DEBUG
-
-	
-
 
 	//あらかじめ入力データのための枠を開けておく
 	//ここで枠を開けておかないと、チェックの際にAt関数でクラッシュする可能性がある(Null)
@@ -131,7 +126,3 @@ bool Input::IsReleased(const char* name) const
 	//入力されていなかったらtrueにする
 	return m_lastInputData.at(name) && !m_inputData.at(name);
 }
-
-
-
-
