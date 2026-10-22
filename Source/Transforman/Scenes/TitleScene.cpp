@@ -5,7 +5,7 @@
 #include "../Main/Application.h"
 #include "GameScene.h"
 #include <assert.h>
-#include "../../Dxlib_h/EffekseerForDXLib.h"
+#include <EffekseerForDXLib.h>
 #include "../SoundManager.h"
 #include "../StageType.h"
 

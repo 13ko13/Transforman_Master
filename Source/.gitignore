@@ -30,3 +30,6 @@ ipch/
 *.tlog
 *.idb
 *.ilk
+
+# DxLib runtime log
+Log.txt
